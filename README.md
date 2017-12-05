@@ -2,7 +2,7 @@
 
 Given a time, given as a String in numerical format, convert that value into its military time phrase.
 
-**Complete in Java**
+**Complete in TypeScript**
 
 **Provide Unit Testing**
 
