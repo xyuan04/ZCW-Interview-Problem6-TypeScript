@@ -100,6 +100,11 @@ and in the lower section, a text field that has the time printed out like the ex
 
 ![ArmyTime](ArmyTime.png)
 
+This shows a bogus logo, make, steal, copy, whatever a better one. 
+This also shows a simple time chooser. 
+Use any time chooser that you think is cool.
+There are many out there; search a bit.
+
 All this must be done in Typescript, using angular. It is just a "front-end" app; no back end work required.
 The app will "run in your browser" and be pretty simple. Extra points with VP Lossie for cool styling, neat UI around time entry
 and general tidiness of the app. 
