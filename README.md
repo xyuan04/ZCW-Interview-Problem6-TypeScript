@@ -98,6 +98,8 @@ up top a simple time chooser/picker, where you can only pick 1 - 12 hours, 0 - 5
 A button in the middle labelled "Print Time"
 and in the lower section, a text field that has the time printed out like the examples above.
 
+![ArmyTime](ArmyTime.png)
+
 All this must be done in Typescript, using angular. It is just a "front-end" app; no back end work required.
 The app will "run in your browser" and be pretty simple. Extra points with VP Lossie for cool styling, neat UI around time entry
 and general tidiness of the app. 
