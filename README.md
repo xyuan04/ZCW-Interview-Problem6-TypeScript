@@ -1,6 +1,8 @@
 # Typescript
 
-A directive has come down from Vice President Lossie - our organization needs to know more about TYPESCRIPT because she has heard that several companies willneed dozens of people who know the language.
+_Hot, Hot, HOT!_
+
+A directive has come down from Vice President Lossie - our organization needs to know more about **TypeScript** because she has heard that several companies will need dozens of people who know the language.
 
 https://www.typescriptlang.org
 
@@ -8,9 +10,15 @@ We have to make a demo to the Board of Directors on Monday at Noon!
 
 You need to build a bootcamp time app; it needs to take in a time and produce a string of that time in English.
 
-VP Lossie has also said that the companies need people with experience in Visual Studio Code (because it is written in TypeScript!) SO yo need to download vscode and use it as the IDE on this project!!
+VP Lossie has also said that the companies need people with experience in **Visual Studio Code** (because it is written in TypeScript!) SO yo need to download vscode and use it as the IDE on this project!!
 
 https://code.visualstudio.com
+
+Fork this REPO, clone it, and be sure to commit often! Push after every commit! Feel free to use this app **GitHub Desktop** to do all the GIT stuff with!
+
+https://desktop.github.com
+
+Time to see some 21st century tools!
 
 # Problem 6: TypeScript Boot Camp Time
 
