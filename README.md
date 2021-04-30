@@ -100,6 +100,10 @@ and in the lower section, a text field that has the time printed out like the ex
 
 ![ArmyTime](ArmyTime.png)
 
+This "wireframe" shows just a possible layout of the app.
+Feel free to improve it. 
+It should not look like that diagram! 
+Look at those ugly colors, it looks like it was done by some last millennium hacker!!
 This shows a bogus logo, make, steal, copy, whatever a better one. 
 This also shows a simple time chooser. 
 Use any time chooser that you think is cool.
