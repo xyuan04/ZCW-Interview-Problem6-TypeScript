@@ -7,8 +7,8 @@ export class TimerService {
 
   constructor() { }
 
-  timeConvertor(time: string): string {
-    const PM = time.match('PM') ? true : false;
+  timeConvertor(hourform: string, minform: string, ampm: string): string {
+    const PM = ampm.match('PM') ? true : false;
     let hour;
     let min;
     const numbers = ['Zero', 'One', 'Two', 'Three', 'Four',
@@ -26,7 +26,7 @@ export class TimerService {
     'Fifty', 'Fifty One', 'Fifty Two', 'Fifty Three', 'Fifty Four',
     'Fifty Five', 'Fifty Six', 'Fifty Seven', 'Fifty Eight', 'Fifty Nine'];
 
-    const timeArray = time.split(':');
+    const timeArray = [hourform, minform, ampm];
 
     if (timeArray[0] === '12') {
       timeArray[0] = '0';

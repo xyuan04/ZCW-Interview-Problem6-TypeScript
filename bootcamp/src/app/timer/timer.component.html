@@ -2,7 +2,7 @@
 <br>
 <div class="timeselect">
 
-  <select class="hour" name="chosentime" id="hour">
+  <select class="hour" name="chosentime" id="a" [(ngModel)]="hourselect">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -17,7 +17,7 @@
     <option value="12">12</option>
   </select>
 
-  <select class="min" name="chosentime" id="min">
+  <select class="min" name="chosentime" id="b" [(ngModel)]="minselect">
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -79,7 +79,7 @@
     <option value="59">59</option>
   </select>
 
-  <select class="pm" name="chosentime" id="pm">
+  <select class="pm" name="chosentime" id="c" [(ngModel)]="apmpmselect">
     <option value="AM">AM</option>
     <option value="PM">PM</option>
   </select>
@@ -88,7 +88,7 @@
 <br>
 <br>
 
-<div class="button fire">Print Time</div>
+<div class="button fire" (click)="convertTime()">Print Time</div>
 
 <br>
 <br>
