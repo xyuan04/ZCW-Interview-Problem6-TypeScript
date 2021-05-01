@@ -1,5 +1,5 @@
 .timeselect {
-  position: center;
+  position: absolute;
 }
 
 .hour {
@@ -17,4 +17,5 @@
 .printtime {
   color: white;
   background-color: darkorange;
+  position: center;
 }

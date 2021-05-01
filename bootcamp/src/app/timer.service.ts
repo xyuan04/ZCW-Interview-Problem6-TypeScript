@@ -26,12 +26,11 @@ export class TimerService {
     'Fifty', 'Fifty One', 'Fifty Two', 'Fifty Three', 'Fifty Four',
     'Fifty Five', 'Fifty Six', 'Fifty Seven', 'Fifty Eight', 'Fifty Nine'];
 
-    if (time === '12:00AM') {
-      return 'Zero Hundred Hours';
-    }
-
     const timeArray = time.split(':');
 
+    if (timeArray[0] === '12') {
+      timeArray[0] = '0';
+    }
 
     if (PM) {
         hour = 12 + parseInt(timeArray[0], 10);
