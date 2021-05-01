@@ -7,7 +7,7 @@ export class TimerService {
 
   constructor() { }
 
-  timeConvertor(time: string) {
+  timeConvertor(time: string): string {
     let PM = time.match('PM') ? true : false
     let hour;
     let min;
@@ -40,7 +40,7 @@ export class TimerService {
         min = parseInt(min); 
     }
 
-    console.log(hour + ':' + min)
+    // console.log(hour + ':' + min)
     
     if(hour === 0 && min === 0) {
       return 'Zero Hundred Hours'
@@ -50,5 +50,7 @@ export class TimerService {
       return `${numbers[hour]} Hundred and ${numbers[min]} Hours`;
     }
 }
+
+timeConverter('1:30PM')
 
 }
