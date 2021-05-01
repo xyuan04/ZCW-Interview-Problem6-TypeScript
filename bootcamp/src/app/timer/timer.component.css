@@ -1,5 +1,19 @@
 .timeselect {
-  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid green;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transform: skewX(-10deg);
+  height: 50px;
+  width: 200px;
+  border-radius: 20px 5px 20px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 15px sans-serif;
+  font-weight: 300;
 }
 
 .hour {
@@ -14,8 +28,109 @@
   color: black;
 }
 
-.printtime {
-  color: white;
-  background-color: darkorange;
-  position: center;
+.button {
+  border: 1px solid green;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transform: skewX(-10deg);
+  height: 50px;
+  width: 200px;
+  border-radius: 20px 5px 20px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font: 15px sans-serif;
+  font-weight: 300;
+  text-shadow: 0 0 20px #fff;
+  text-transform: uppercase;
+  -webkit-animation: breath2 2s 0.5s infinite alternate;
+  animation: breath2 2s 0.5s infinite alternate;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:before {
+  content: "";
+  display: block;
+  width: calc(100% - 22px);
+  height: calc(50px - 8px);
+  -webkit-animation: breath 2s infinite alternate;
+  animation: breath 2s infinite alternate;
+  left: 10px;
+  top: 3px;
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px 3px 15px 3px;
+}
+.button.fire {
+  border-color: #ffeca8;
+  background-image: linear-gradient(to bottom, rgba(255, 138, 48, 0.6), rgba(240, 96, 29, 0.6));
+  box-shadow: 0 0 70px rgba(255, 138, 48, 0.6), 0 5px 20px rgba(255, 138, 48, 0.6), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+  color: #ffeca8;
+}
+.button.fire:before {
+  box-shadow: inset 0 0 30px 0 #ffeca8;
+}
+.timeselect{
+  border-color: #a8ecff;
+  background-image: linear-gradient(to bottom, rgba(48, 138, 255, 0.5), rgba(29, 96, 240, 0.5));
+  box-shadow: 0 0 70px rgba(48, 138, 255, 0.5), 0 5px 20px rgba(48, 138, 255, 0.5), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+  color: #a8ecff;
+}
+.timeselect:before {
+  box-shadow: inset 0 0 30px 0 #a8ecff;
+}
+.button:hover.fire {
+  box-shadow: 0 0 70px rgba(255, 138, 48, 0.8), 0 5px 20px rgba(255, 138, 48, 0.8), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
+}
+.button:hover.fire:before {
+  box-shadow: inset 0 0 50px 0 #ffeca8;
+}
+.button:hover.timeselect {
+  box-shadow: 0 0 70px rgba(48, 138, 255, 0.8), 0 5px 20px rgba(48, 138, 255, 0.8), inset 0 1px #a8ecff, inset 0 -1px #a8ecff;
+}
+.button:hover.timeselect:before {
+  box-shadow: inset 0 0 50px 0 #a8ecff;
+}
+.button + .button {
+  margin-top: 15px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 40vh;
+}
+
+.sketchy {
+  padding: 4rem 8rem;
+  display: inline-block;
+  border: 3px solid #333333;
+  font-size: 2.5rem;
+  border-radius: 2% 6% 5% 4%/1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  background: #ffffff;
+  position: relative;
+}
+.sketchy:before {
+  content: "";
+  border: 2px solid #353535;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4%/2% 6% 5% 4%;
 }
