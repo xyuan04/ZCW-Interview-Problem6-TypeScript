@@ -7,7 +7,7 @@ export class TimerService {
 
   constructor() { }
 
-  timeConvertor(time) {
+  timeConvertor(time: string) {
     let PM = time.match('PM') ? true : false
     let hour;
     let min;
@@ -26,17 +26,17 @@ export class TimerService {
     "fifty", "fifty one", "fifty two", "fifty three", "fifty four",
     "fifty five", "fifty six", "fifty seven", "fifty eight", "fifty nine"];
     
-    time = time.split(':')
+    let timeArray = time.split(':')
 
     
     if (PM) {
-        hour = 12 + parseInt(time[0],10);
-        min = time[1].replace('PM', '');
+        hour = 12 + parseInt(timeArray[0],10);
+        min = timeArray[1].replace('PM', '');
         min = parseInt(min);
     } else {
-        hour = time[0];
+        hour = timeArray[0];
         hour = parseInt(hour);
-        min = time[1].replace('AM', '');    
+        min = timeArray[1].replace('AM', '');    
         min = parseInt(min); 
     }
 
